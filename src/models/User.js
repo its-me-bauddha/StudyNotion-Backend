@@ -34,7 +34,7 @@ const userSchema = new mongoose.Schema(
             accountType:{
                 type:String,
                 enum : [Admin,Instructor,Student],
-                required:true,
+                //required:true,
             },
             active:{
                 type:Boolean,
@@ -52,11 +52,11 @@ const userSchema = new mongoose.Schema(
             },
             image:{
                 type:String,
-                required:true,
+                //required:true,
             },
             additionalDetails:{
                 type:mongoose.Schema.Types.ObjectId,
-                required:true,
+               // required:true,
                 ref:"Profile",
             },
             courses:[
